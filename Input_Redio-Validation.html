@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Input Redio Validation </title>
+</head>
+
+<body>
+    <label for="Gander">Gander</label>
+    <input type="radio" name="gender" id="nm">Male
+    <input type="radio" name="gender" id="nm">Female
+    <br><br>
+    <input type="submit" name="" id="" onclick="radio_vali()">
+
+    <script>
+        gen = document.getElementsByName('gender')
+            // gen = document.getElementById('nm')
+        console.log(gen)
+
+        // gen[0].checked;
+
+        function radio_vali() {
+            if (gen[0].checked == false && gen[1].checked == false) {
+                alert('Reured...!')
+            }
+        }
+    </script>
+</body>
+
+</html>
